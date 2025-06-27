@@ -64,7 +64,7 @@ export const PROJECTS = [
     // This project helped strengthen my frontend skills in structuring complex layouts, implementing animations, and improving responsiveness without relying on frameworks. ",
     technologies: ["HTML", "CSS", "Js"],
     links: [
-      "https://vercel.com/aryan-jain-chympas-projects/virtual-jjc-front-end",
+      "https://netflix-frontend-lilac.vercel.app/",
     ],
   },
   {
