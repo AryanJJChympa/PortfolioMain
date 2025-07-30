@@ -19,6 +19,14 @@ const container2 = (delay) => ({
   },
 });
 const Hero = () => {
+  const handleButton = () => {
+    const link = document.createElement("a");
+    link.href = "/resume/Aryan%20JJ%20Chympa(Resume%20Main).pdf";;
+    link.download = "Aryan JJ Chympa - Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <div className="border-b border-neutral-900">
       <div className="container mx-auto px-8 py-12">
@@ -51,16 +59,25 @@ const Hero = () => {
               </motion.p>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 lg:p-8">
-            <div className="flex justify-center">
+          <div className="w-full lg:w-1/2 lg:p-8 ">
+            <div className="flex flex-col items-center">
               <motion.img
                 variants={container2(1.5)}
                 initial="hidden"
                 animate="visible"
                 src={profilePic}
                 alt="Profile picture of Aryan Jain Chympa"
-                className="w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 rounded-full object-cover border-2 border-purple-900 shadow-lg "
+                className="w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 rounded-full object-cover border-2 border-purple-900 shadow-lg"
               />
+              <motion.button
+                onClick={handleButton}
+                variants={container2(1.5)}
+                initial="hidden"
+                animate="visible"
+                className="items-center download p-2 m-3 ml-7 md:ml-4 lg:ml-8 text-sm md:text-sm lg:text-lg border-none rounded-full bg-gradient-to-r from-purple-800 to-purple-950 hover:bg-purple-600"
+              >
+                Download Resume
+              </motion.button>
             </div>
           </div>
         </div>
