@@ -64,7 +64,7 @@ export const PROJECTS = [
     // This project helped strengthen my frontend skills in structuring complex layouts, implementing animations, and improving responsiveness without relying on frameworks. ",
     technologies: ["HTML", "CSS", "Js"],
     links: [
-      "https://netflix-frontend-lilac.vercel.app/",
+      "https://netview-seven.vercel.app/",
     ],
   },
   {
@@ -76,6 +76,15 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JS"],
     links: ["https://snake-game-flax-eta.vercel.app/"],
   },
+  // {
+  //   title: "Spotify Mini",
+  //   image: project5,
+  //   description:
+  //     "Developed a mini Spotify Clone using my learnings from Js and making it interactive with its play pause features and added some local songs",
+  //   // This project helped me deepen my understanding of DOM manipulation, game loops using requestAnimationFrame(), and local storage management in JavaScript.",
+  //   technologies: ["HTML", "CSS", "JS"],
+  //   links: ["https://snake-game-flax-eta.vercel.app/"],
+  // },
 ];
 
 export const CONTACT = {
