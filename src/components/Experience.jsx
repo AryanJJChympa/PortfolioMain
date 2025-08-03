@@ -30,7 +30,7 @@ const Experience = () => {
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4 "
-            >
+            > 
               <h6 className="mb-2 font-semibold">
                 {experience.role} -{" "}
                 <span className="text-sm text-company-highlight">{experience.company}</span>

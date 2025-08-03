@@ -10,10 +10,11 @@ const ThemeToggle = () => {
 
     useEffect(() => {
         const root = document.documentElement;
-        root.classList.remove("theme-light", "theme-daisy");
+        root.classList.remove("theme-light", "theme-daisy","theme-choco");
 
         if (theme === "light") root.classList.add("theme-light");
         else if (theme === "daisy") root.classList.add("theme-daisy");
+        else if (theme === "choco") root.classList.add("theme-choco");
 
         localStorage.setItem("theme", theme);
     }, [theme]);
@@ -62,6 +63,15 @@ const ThemeToggle = () => {
                             }`}
                     >
                         Daisy
+                    </button>
+                </li>
+                <li>
+                    <button
+                        onClick={() => setTheme("choco")}
+                        className={`w-full btn btn-sm btn-ghost justify-start text-accent-purple${theme === "choco" ? "bg-accent/30 && text-white" : ""
+                            }`}
+                    >
+                        Choco
                     </button>
                 </li>
             </ul>

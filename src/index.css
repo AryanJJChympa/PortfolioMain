@@ -152,3 +152,49 @@
 
   --color-radial-light: rgba(253, 164, 175, 0.5);
 }
+
+/* Chocolate Theme */
+.theme-choco {
+  --color-text-base: #3e2c23;             /* Rich brown text */
+  --color-text-muted: #7c5f4d;            /* Muted milk chocolate */
+  --color-contact-text: #6b4e3d;
+
+  --color-border-subtle: #d6bfa9;         /* Soft caramel border */
+  --color-border-strong: #a47149;         /* Dark caramel border */
+  --color-badge-border: #8b5e3c;          /* Chocolate brown */
+  --color-hover-border: #c0844e;          /* Light brown on hover */
+
+  --color-bg-main: #f7f3ef;               /* Off-white creamy background */
+  --color-badge-bg: #ede0d4;              /* Light coffee cream */
+
+  --color-accent-purple-main: #a47149;    /* Caramel accent */
+  --color-company-highlight: #5d3a1a;     /* Cream highlight */
+  --color-hover-purple: #5d3a1a;          /* Dark roast hover */
+
+  --color-link: #b36b2f;                  /* Toasted orange-brown */
+  --color-link-hover: #7a4523;            /* Darker shade on hover */
+
+  --gradient-hero-text-from: #e6ccb2;     /* Light mocha */
+  --gradient-hero-text-via: #b08968;      /* Milk chocolate */
+  --gradient-hero-text-to: #7f5539;       /* Deep cocoa */
+
+  --gradient-resume-from: #b08968;        /* Resume caramel */
+  --gradient-resume-to: #7f5539;
+
+  --gradient-logo-hover-from: #ede0d4;    /* Cream */
+  --gradient-logo-hover-via: #e6ccb2;     
+  --gradient-logo-hover-to: #b08968;
+
+  --color-selection-bg: #d6bfa9;          /* Selection caramel */
+  --color-selection-text: #3e2c23;
+
+  --color-html-icon: #d97706;             /* Burnt orange */
+  --color-css-icon: #3b82f6;              /* Retain cool contrast */
+  --color-js-icon: #facc15;               /* Yellow JS contrast */
+  --color-react-icon: #22d3ee;
+  --color-tailwind-icon: #5eead4;
+  --color-node-icon: #22c55e;
+  --color-mongo-icon: #22c55e;
+
+  --color-radial-light: rgba(185, 137, 83, 0.3); /* Soft cocoa glow */
+}
