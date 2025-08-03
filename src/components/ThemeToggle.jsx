@@ -10,10 +10,10 @@ const ThemeToggle = () => {
 
     useEffect(() => {
         const root = document.documentElement;
-        root.classList.remove("theme-light", "theme-cartoon");
+        root.classList.remove("theme-light", "theme-daisy");
 
         if (theme === "light") root.classList.add("theme-light");
-        else if (theme === "cartoon") root.classList.add("theme-cartoon");
+        else if (theme === "daisy") root.classList.add("theme-daisy");
 
         localStorage.setItem("theme", theme);
     }, [theme]);
@@ -57,11 +57,11 @@ const ThemeToggle = () => {
                 </li>
                 <li>
                     <button
-                        onClick={() => setTheme("cartoon")}
-                        className={`w-full btn btn-sm btn-ghost justify-start text-accent-purple${theme === "cartoon" ? "bg-accent/30 && text-white" : ""
+                        onClick={() => setTheme("daisy")}
+                        className={`w-full btn btn-sm btn-ghost justify-start text-accent-purple${theme === "daisy" ? "bg-accent/30 && text-white" : ""
                             }`}
                     >
-                        Cartoon
+                        Daisy
                     </button>
                 </li>
             </ul>

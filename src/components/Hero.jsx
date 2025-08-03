@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/aryanchympa.jpg";
+import profilePic from "../assets/aryanprofile.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -29,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="border-b border-border-strong">
+    <div className="border-b border-border-subtle pb-20">
       <div className="container mx-auto px-8 py-12">
         <div className="flex flex-wrap items-start">
           <div className="w-full lg:w-1/2">

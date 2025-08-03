@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="border-b border-[var(--border)] pb-4">
+    <div className="border-b border-border-subtle pb-20">
       <h2 className="my-20 text-center text-5xl md:text-6xl font-thin">
-        <span className="text-[var(--accent-purple)] font-sans">C</span>ontact
+        <span className="text-accent-purple font-sans">C</span>ontact
       </h2>
       <div className="text-center tracking-tighter">
         <motion.p

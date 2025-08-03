@@ -14,7 +14,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="border-b border-border-subtle pb-24">
+    <div className="border-b border-border-subtle pb-20">
       <motion.h2
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}

@@ -3,9 +3,9 @@ import { FaLink } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <div className="border-b border-[var(--border)] pb-24">
+    <div className="border-b border-border-subtle pb-20">
       <h2 className="text-4xl lg:text-6xl font-thin text-center my-20 text-[var(--text-secondary)]">
-        <span className="text-[var(--accent-purple)] font-sans">P</span>rojects
+        <span className="text-accent-purple font-sans">P</span>rojects
       </h2>
       <div>
         {PROJECTS.map((project, index) => (
