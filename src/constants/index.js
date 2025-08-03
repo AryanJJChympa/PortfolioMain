@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
 
 export const HERO_CONTENT = `Hello! I'm Aryan — A C++ enthusiast with 300+ DSA problems solved on LeetCode and GeeksforGeeks, backed by a strong foundation in algorithms and data structures. I'm also a full-stack web developer in the making, building responsive and dynamic applications using HTML, CSS, JavaScript, Tailwind CSS, React.js, Node.js, and MongoDB. Always eager to learn and take on challenges, I’m actively seeking internships, collaborations, and exciting opportunities to grow as a software developer.`;
 
@@ -52,16 +53,22 @@ export const PROJECTS = [
     image: project2,
     description:
       "Appealing Frontend Design for a landing page, Visually appealing and Responsive design.",
-    //  Learning: hands-on experience in structuring real-world React applications while mastering Tailwind CSS for efficient styling.",
     technologies: ["HTML", "CSS", "React", "Tailwind"],
     links: ["https://virtual-jjc-front-end.vercel.app/"],
   },
   {
-    title: "Netflix Frontend",
+    title: "ACoffee",
     image: project3,
     description:
+      "Cool Responsive Coffee Landing Page, Responsive Design with Warm, Rich look and Design on Figma.",
+    technologies: ["HTML", "CSS", "Js", "Figma"],
+    links: ["https://a-coffee.vercel.app/"],
+  },
+  {
+    title: "Netflix Frontend",
+    image: project4,
+    description:
       "Built a responsive clone of the Netflix India landing page, focusing on replicating the visual design and interactive elements using pure HTML, CSS, and JavaScript.",
-    // This project helped strengthen my frontend skills in structuring complex layouts, implementing animations, and improving responsiveness without relying on frameworks. ",
     technologies: ["HTML", "CSS", "Js"],
     links: [
       "https://netview-seven.vercel.app/",
@@ -69,10 +76,9 @@ export const PROJECTS = [
   },
   {
     title: "Snake Game",
-    image: project4,
+    image: project5,
     description:
       "Developed a classic Snake Game entirely with vanilla HTML, CSS, and JavaScript, focusing on game logic, user interaction, and UI responsiveness.",
-    // This project helped me deepen my understanding of DOM manipulation, game loops using requestAnimationFrame(), and local storage management in JavaScript.",
     technologies: ["HTML", "CSS", "JS"],
     links: ["https://snake-game-flax-eta.vercel.app/"],
   },

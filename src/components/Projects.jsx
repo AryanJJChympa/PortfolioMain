@@ -24,7 +24,7 @@ const Projects = () => {
               </div>
               <p className="mb-4 text-[var(--text-tertiary)]">{project.description}</p>
               {project.technologies.map((tech, i) => (
-                <span key={i} className="mr-2 border-[var(--accent-purple-dark)] border-2 rounded mt-4 bg-[var(--bg-soft)] px-2 py-1 text-sm font-medium hover:border-[var(--accent-purple-light)] text-[var(--accent-purple-light)]">
+                <span key={i} className="mr-2 border-[var(--color-badge-border)] border-2 rounded mt-4 bg-bg-badge px-2 py-1 text-sm font-medium hover:border-[var(--color-hover-border)] text-accent-purple">
                   {tech}
                 </span>
               ))}
