@@ -3,8 +3,152 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "daisyui";
 
 :root {
   font-family: "Inter", sans-serif;
+    /* Text Colors */
+  --color-text-base: #d4d4d4;         /* text-neutral-300 */
+  --color-text-muted: #a3a3a3;        /* text-neutral-400 */
+  --color-contact-text: #a3a3a3;      /* same as text-muted */
+
+  /* Borders */
+  --color-border-subtle: #27272a;     /* border-neutral-800 */
+  --color-border-strong: #171717;     /* border-neutral-900 */
+  --color-badge-border: #5b21b6;      /* border-purple-800 */
+  --color-hover-border: #a855f7;      /* hover:border-purple-500 */
+
+  /* Backgrounds */
+  --color-bg-main: #0a0a0a;           /* bg-neutral-950 */
+  --color-badge-bg: #171717;          /* bg-neutral-900 */
+
+  /* Accent / Branding */
+  --color-accent-purple-main: #9333ea;     /* text-purple-600 */
+  --color-company-highlight: #d8b4fe;      /* text-purple-300 */
+  --color-hover-purple: #7e22ce;           /* hover:text-purple-700 */
+
+  /* Links */
+  --color-link: #c084fc;              /* text-purple-400 */
+  --color-link-hover: #ddd6fe;        /* hover:text-purple-200 */
+
+  /* Hero Gradient (Text) */
+  --gradient-hero-text-from: #f9a8d4; /* from-pink-300 */
+  --gradient-hero-text-via: #64748b;  /* via-slate-500 */
+  --gradient-hero-text-to: #a855f7;   /* to-purple-500 */
+
+  /* Resume Button Gradient */
+  --gradient-resume-from: #5b21b6;    /* from-purple-800 */
+  --gradient-resume-to: #2e1065;      /* to-purple-950 */
+
+  /* Name Hover Gradient (Navbar logo) */
+  --gradient-logo-hover-from: #f9a8d4; /* from-pink-300 */
+  --gradient-logo-hover-via: #64748b;  /* via-slate-500 */
+  --gradient-logo-hover-to: #a855f7;   /* to-purple */
+
+  /* Selection */
+  --color-selection-bg: #67e8f9;      /* selection:bg-cyan-300 */
+  --color-selection-text: #083344;    /* selection:text-cyan-900 */
+
+  /* Skill Icons */
+  --color-html-icon: #f97316;         /* text-orange-500 */
+  --color-css-icon: #3b82f6;          /* text-blue-500 */
+  --color-js-icon: #facc15;           /* text-yellow-400 */
+  --color-react-icon: #22d3ee;        /* text-cyan-400 */
+  --color-tailwind-icon: #5eead4;     /* text-teal-300 */
+  --color-node-icon: #22c55e;         /* text-green-500 */
+  --color-mongo-icon: #22c55e;        /* text-green-500 again (same as Node) */
+
+  /* Misc */
+  --color-radial-light: rgba(120, 119, 198, 0.3); /* radial glow background */
 }
 
+.theme-light {
+  --color-text-base: #1a1a1a;
+  --color-text-muted: #4b5563;
+  --color-contact-text: #4b5563;
+
+  --color-border-subtle: #e5e7eb;
+  --color-border-strong: #d1d5db;
+  --color-badge-border: #9333ea;
+  --color-hover-border: #7c3aed;
+
+  --color-bg-main: #ffffff;
+  --color-badge-bg: #f3f4f6;
+
+  --color-accent-purple-main: #c084fc;
+  --color-company-highlight: #c084fc;
+  --color-hover-purple: #6b21a8;
+
+  --color-link: #7c3aed;
+  --color-link-hover: #581c87;
+
+  --gradient-hero-text-from: #f472b6;
+  --gradient-hero-text-via: #94a3b8;
+  --gradient-hero-text-to: #9333ea;
+
+  --gradient-resume-from: #9333ea;
+  --gradient-resume-to: #6b21a8;
+
+  --gradient-logo-hover-from: #f472b6;
+  --gradient-logo-hover-via: #94a3b8;
+  --gradient-logo-hover-to: #9333ea;
+
+  --color-selection-bg: #bae6fd;
+  --color-selection-text: #0c4a6e;
+
+  --color-html-icon: #ea580c;
+  --color-css-icon: #2563eb;
+  --color-js-icon: #eab308;
+  --color-react-icon: #06b6d4;
+  --color-tailwind-icon: #2dd4bf;
+  --color-node-icon: #16a34a;
+  --color-mongo-icon: #16a34a;
+
+  --color-radial-light: rgba(124, 58, 237, 0.3);
+}
+
+/* Cartoon Theme */
+.theme-cartoon {
+  --color-text-base: #1f2937;
+  --color-text-muted: #9ca3af;
+  --color-contact-text: #6b7280;
+
+  --color-border-subtle: #fcd34d;
+  --color-border-strong: #fbbf24;
+  --color-badge-border: #f472b6;
+  --color-hover-border: #f9a8d4;
+
+  --color-bg-main: #fdf2f8;
+  --color-badge-bg: #fce7f3;
+
+  --color-accent-purple-main: #ec4899;
+  --color-company-highlight: #f9a8d4;
+  --color-hover-purple: #be185d;
+
+  --color-link: #db2777;
+  --color-link-hover: #9d174d;
+
+  --gradient-hero-text-from: #f9a8d4;
+  --gradient-hero-text-via: #fcd34d;
+  --gradient-hero-text-to: #f472b6;
+
+  --gradient-resume-from: #f472b6;
+  --gradient-resume-to: #db2777;
+
+  --gradient-logo-hover-from: #fde68a;
+  --gradient-logo-hover-via: #f9a8d4;
+  --gradient-logo-hover-to: #f472b6;
+
+  --color-selection-bg: #fcd34d;
+  --color-selection-text: #78350f;
+
+  --color-html-icon: #f97316;
+  --color-css-icon: #3b82f6;
+  --color-js-icon: #facc15;
+  --color-react-icon: #22d3ee;
+  --color-tailwind-icon: #5eead4;
+  --color-node-icon: #22c55e;
+  --color-mongo-icon: #22c55e;
+
+  --color-radial-light: rgba(253, 164, 175, 0.5);
+}

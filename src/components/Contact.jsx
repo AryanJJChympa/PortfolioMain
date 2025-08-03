@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-[var(--border)] pb-4">
       <h2 className="my-20 text-center text-5xl md:text-6xl font-thin">
-        <span className="text-purple-600 font-sans">C</span>ontact
+        <span className="text-[var(--accent-purple)] font-sans">C</span>ontact
       </h2>
       <div className="text-center tracking-tighter">
         <motion.p
@@ -13,7 +13,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
         >
-          <p className="my-4">{CONTACT.address}</p>
+         {CONTACT.address}
         </motion.p>
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}

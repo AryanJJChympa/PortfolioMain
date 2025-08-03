@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-border-strong pb-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
         className="my-20 text-center text-5xl md:text-6xl font-thin"
       >
-        <span className="text-purple-600 font-sans">E</span>xperience
+        <span className="text-accent-purple font-sans">E</span>xperience
       </motion.h2>
       <div>
         {EXPERIENCES.map((experience, index) => (
@@ -21,7 +21,7 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <p className="mb-2 text-sm text-neutral-400 hover:text-purple-800">
+              <p className="mb-2 text-sm text-text-muted hover:text-[var(--color-hover-purple)]">
                 {experience.year}
               </p>
             </motion.div>
@@ -31,16 +31,14 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4 "
             >
-              <h6 className="mb-2 font-semibold ">
+              <h6 className="mb-2 font-semibold">
                 {experience.role} -{" "}
-                <span className="text-sm text-purple-300">
-                  {experience.company}
-                </span>
+                <span className="text-sm text-company-highlight">{experience.company}</span>
               </h6>
-              <p className="mb-4 text-neutral-400">{experience.description}</p>
+              <p className="mb-4 text-text-muted">{experience.description}</p>
               {experience.technologies.map((tech, index) => (
                 <span
-                  className="mr-2 border-purple-800 border-2 rounded mt-4 bg-neutral-900 px-2 py-1 text-sm font-medium hover:border-purple-500 text-purple-600  "
+                  className="mr-2 border-[var(--color-badge-border)] border-2 rounded mt-4 bg-bg-badge px-2 py-1 text-sm font-medium hover:border-[var(--color-hover-border)] text-accent-purple"
                   key={index}
                 >
                   {tech}
