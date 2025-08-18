@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/aryanprofile.jpg";
+import profilePic from "../assets/aryanchympa2.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -10,6 +10,7 @@ const container = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
+
 const container2 = (delay) => ({
   hidden: { x: 100, opacity: 0 },
   visible: {
@@ -18,6 +19,7 @@ const container2 = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
+
 const Hero = () => {
   const handleButton = () => {
     const link = document.createElement("a");
