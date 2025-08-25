@@ -11,8 +11,8 @@ const Navbar = () => {
       </div>
 
       {/* Center: Theme Toggle */}
-      <div className="flex justify-center">
-        <ThemeToggle />
+      <div className="flex justify-center mr-12">
+        <ThemeToggle/>
       </div>
 
       {/* Right: Social Icons */}

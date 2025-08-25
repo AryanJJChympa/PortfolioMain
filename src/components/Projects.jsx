@@ -1,5 +1,8 @@
 import { PROJECTS } from "../constants";
 import { FaLink } from "react-icons/fa";
+import React from 'react'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 const Projects = () => {
   return (
@@ -11,7 +14,9 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <div className="w-full lg:w-1/4">
-              <img src={project.image} width={200} height={200} alt={project.title} className="mb-6 rounded" />
+            <Zoom>
+              <img src={project.image} width={200} height={200} alt={project.title} className="mb-6 rounded cursor-zoom-in transition-transform duration-300 ease-in-out hover:scale-[1.03]" />
+            </Zoom>
             </div>
             <div className="w-full max-w-xl lg:w-3/4">
               <div className="flex gap-2">

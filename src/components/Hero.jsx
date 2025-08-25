@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/aryanchympa2.jpg";
 import { motion } from "framer-motion";
 
+
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -77,7 +78,7 @@ const Hero = () => {
                 variants={container2(1.5)}
                 initial="hidden"
                 animate="visible"
-                className="items-center download p-2 m-3 ml-7 md:ml-4 lg:ml-8 text-sm md:text-sm lg:text-lg border-none rounded-full bg-gradient-to-r from-[var(--gradient-resume-from)] to-[var(--gradient-resume-to)] hover:bg-purple-600 text-white"
+                className="btn btn-active btn-primary mt-2 ml-2" 
               >
                 Download Resume
               </motion.button>

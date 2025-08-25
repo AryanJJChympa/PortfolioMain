@@ -199,6 +199,21 @@
   --color-radial-light: rgba(185, 137, 83, 0.3); /* Soft cocoa glow */
 }
 
-.glow-border {
-  border-image: conic-gradient(from 0deg, #a855f7 0%, #c084fc 50%, #a855f7 100%) 1;
+
+@layer components {
+  /* Change backdrop color based on your theme */
+  [data-rmiz-modal-overlay="visible"] {
+    background-color: var(--bg-main, rgba(0, 0, 0, 0.85)) !important;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /* Smooth zoom animation */
+  [data-rmiz-modal-img] {
+    transform: scale(0.95);
+    transition: transform 0.35s ease-in-out;
+  }
+
+  [data-rmiz-modal-img="visible"] {
+    transform: scale(1);
+  }
 }
