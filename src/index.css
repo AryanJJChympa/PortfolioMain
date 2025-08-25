@@ -102,7 +102,7 @@
   --color-tailwind-icon: #2dd4bf;
   --color-node-icon: #16a34a;
   --color-mongo-icon: #16a34a;
-
+  --color-express-icon : #000000;
   --color-radial-light: rgba(124, 58, 237, 0.3);
 }
 
@@ -197,4 +197,8 @@
   --color-mongo-icon: #22c55e;
 
   --color-radial-light: rgba(185, 137, 83, 0.3); /* Soft cocoa glow */
+}
+
+.glow-border {
+  border-image: conic-gradient(from 0deg, #a855f7 0%, #c084fc 50%, #a855f7 100%) 1;
 }

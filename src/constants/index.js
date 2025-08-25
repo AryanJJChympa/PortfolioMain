@@ -8,6 +8,7 @@ import project7 from "../assets/projects/project-7.png";
 
 export const HERO_CONTENT = `Hello! I'm Aryan — A C++ enthusiast with 300+ DSA problems solved on LeetCode and GeeksforGeeks, backed by a strong foundation in algorithms and data structures. I'm also a full-stack web developer in the making, building responsive and dynamic applications using HTML, CSS, JavaScript, Tailwind CSS, React.js, Node.js, and MongoDB. Always eager to learn and take on challenges, I’m actively seeking internships, collaborations, and exciting opportunities to grow as a software developer.`;
 
+
 export const EXPERIENCES = [
   {
     year: "June 2025 - Present",
@@ -19,6 +20,7 @@ Contributed to the official website for the Echor Trip startup by leading UI des
     technologies: ["HTML", "CSS", "JS", "Clerk", "Bootstrap"],
   },
 ];
+
 
 export const PROJECTS = [
   {
